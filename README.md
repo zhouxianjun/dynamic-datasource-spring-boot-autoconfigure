@@ -20,7 +20,7 @@
     spring.datasource.password = xxx
     spring.datasource.driver-class-name = com.mysql.jdbc.Driver
     
-    在上面例子中默认会初始化2个数据源，一个other一个default，当使用@TargetDataSource("other")注解的时候自动切换为one的数据源，
+    在上面例子中默认会初始化2个数据源，一个other一个default，当使用@TargetDataSource("other")注解的时候自动切换为other的数据源，
     在没有注解的函数时使用default数据源。
     
 > 当然你也可以配置`default-data-source`来手动指定默认数据源，默认数据源为`spring.datasource`,
